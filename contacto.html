@@ -6,7 +6,8 @@
 </head>
 
 <body>
-<center><table width="1000" border="0">
+                                                                                                                                                          <center>
+                                                                                                                                                          <table width="1000" border="0">
   <tbody>
     <tr>
       <td><img src="Imagenes/Logo_Cabezote.jpg" width="1000" height="135" alt=""/></td>
@@ -21,7 +22,7 @@
             <td><a href="index.html"><img src="Imagenes/Inicio.jpg" width="223" height="75" alt=""/></a></td>
             <td><a href="quienes_somos.html"><img src="Imagenes/Quines somos.jpg" width="222" height="75" alt=""/></a></td>
             <td><a href="servicios.html"><img src="Imagenes/Servicios boton.jpg" width="219" height="73" alt=""/></a></td>
-            <td><a href="contactenos.php"><img src="Imagenes/Contacto.jpg" width="221" height="75" alt=""/></a></td>
+            <td><img src="Imagenes/Contacto.jpg" width="221" height="75" alt=""/></td>
           </tr>
         </tbody>
       </table></td>
@@ -41,11 +42,47 @@
     </tr>
     <tr>
       <td><table width="100%" border="0">
-        <tbody>
-          <tr>
-            <td><img src="Imagenes/Contactenos.jpg" width="922" height="386" alt=""/></td>
-            </tr>
-        </tbody>
+        <body>
+<form id="form1" method="post" action="enviarcorreo.php">
+      <table width="357" border="2" align="center">
+        <tr>
+          <td width="90">Apellido:</td>
+          <td width="257"><input name="apellido" type="text" id="apellido" size="30" /></td>
+        </tr>
+        <tr>
+          <td>Nombre/s:</td>
+          <td><label>
+            <input name="nombre" type="text" id="nombre" size="30" />
+          </label></td>
+        </tr>
+        <tr>
+          <td>Mail:</td>
+          <td><label>
+            <input name="correo" type="text" id="correo" size="30" />
+          </label></td>
+        </tr>
+        <tr>
+          <td>Asunto:</td>
+          <td><input name="asunto" type="text" id="asunto" size="30" /></td>
+        </tr>
+        <tr>
+          <td height="61" colspan="2"><div align="center">Consulta : </div></td>
+        </tr>
+        <tr>
+          <td height="91" colspan="2"><textarea name="consulta" cols="55" rows="5" id="consulta"></textarea></td>
+        </tr>
+        <tr>
+          <td height="41" colspan="2"><label></label>
+            <div align="center">
+              <input type="submit" name="Submit" value="Enviar" />
+              <label>
+                <input type="reset" name="Submit2" value="Cancelar" />
+              </label>
+            </div></td>
+        </tr>
+      </table>
+    </form>
+</body>
       </table></td>
     </tr>
     <tr>

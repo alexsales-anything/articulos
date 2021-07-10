@@ -7,7 +7,7 @@ $consulta=$_POST['consulta'];
 // Fin de recpcion de datos
 // Acción de envío
 //---------//
-$receptor='alexusame@gmail.com';
+$receptor='AQUÍ TU E-MAIL';
 $mensaje='
 Mensaje de:
 '.$apellido.', '.$nombre.'
@@ -18,8 +18,8 @@ Asunto:
 Consulta:
 '.$consulta.'
 ';
-$desde='From: '.$correo.' <alexusame@gmail.com>';
-ini_set(sendmail_from,'alexusame@gmail.com');
+$desde='From: '.$correo.' <AQUÍ TU E-MAIL>';
+ini_set(sendmail_from,'AQUÍ TU E-MAIL');
 mail($receptor,$asunto,$mensaje,$desde);
 echo'Mensaje enviado con éxito, muchas gracias';
 ?>

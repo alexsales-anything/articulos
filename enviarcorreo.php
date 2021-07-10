@@ -1,4 +1,4 @@
-<contacto.html //Recepción de datos
+<?php //Recepción de datos
 $apellido=$_POST['apellido'];
 $nombre=$_POST['nombre'];
 $empresa=$_POST['empresa'];
@@ -22,4 +22,4 @@ $desde='From: '.$correo.' <alexusame@gmail.com>';
 ini_set(sendmail_from,'alexusame@gmail.com');
 mail($receptor,$asunto,$mensaje,$desde);
 echo'Mensaje enviado con éxito, muchas gracias';
-/>
+?>
